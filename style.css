@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: blueviolet;
+}
+
+body{
+    background-color: aqua;
+}
+
+img{
+    max-width: 100%; /*coloca max para a img nãopassar do seu tamanho limite*/
+}
+
+/*MAIN*/
+main{
+    margin: auto;
+    padding: 0.625em;/*1em equivale a 16 pixels*/
+    max-width: 75em;
+    background-color: blanchedalmond;
+}
+
+.vitrine{
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;/*para centralizar*/
+    flex-wrap: wrap; /*quebra linha*/
+    gap: 50px; /*separa de forma igual*/
+}
+.produto{
+
+    width: 233px;
+    height: 417px;
+    background-color: brown;
+}
+
+/*CABECALHO*/
+footer{
+    background-color: pink;
+}
+
+/* PARA RESPONSSIVIDADE*/
+
+@media screen and (orientation: portrait /*para dispositivos em pé*/)/*tem o landscape para dispositivo deitado*/{
+
+}
+
+@media (max-width: 1025px){
+    .vitrine{
+        gap: 10px;
+    }
+}
+@media (max-width: 769px){
+    .produto{
+        width: 23vw;
+        height: 324px;
+    }
+    
+}
+@media (max-width:555px){
+    .vitrine{
+        gap: 5px;
+    }
+    .produto{
+        height: 300px;
+    }
+}
+@media(max-width: 426px){
+    .vitrine{
+        gap: 10px;
+    }
+    .produto{
+        width: 45vw;
+    }
+    
+}
