@@ -25,7 +25,7 @@ main{
     margin: auto;
     padding: 0.625em;/*1em equivale a 16 pixels*/
     max-width: 75em;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
 }
 h2{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -39,7 +39,6 @@ h2{
 .vitrine{
     width: 100%;
     display: flex;
-    background-color: blueviolet;
     justify-content: center;/*para centralizar*/
     flex-wrap: wrap; /*quebra linha*/
     gap: 50px; /*separa de forma igual*/
@@ -48,8 +47,7 @@ h2{
     display: block;
     width: 233px;
     height: 417px;
-    background-color: brown;
-    border: 3px solid red;
+    border: 2px solid #cfcece;
     border-radius: 5px;
 }
 img{
@@ -57,17 +55,14 @@ img{
 }
 
 .img-produto{
-    background-color: pink;
     height: 55%;
 }
 
 .descricao-produto{
-    background-color: rgb(46, 184, 11);
     height: 35%;
 }
 
 .valor-produto{
-    background-color: rgb(30, 123, 210);
     height: 10%;
 }
 
