@@ -20,6 +20,48 @@ img{
     max-width: 100%; /*coloca max para a img nãopassar do seu tamanho limite*/
 }
 
+/*HEADER*/
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{height: 60px;}
+
+nav a{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 999;
+    background-color: hsla(0, 0%, 100%, 0.295);
+    box-shadow: -10px 0px 10px hsla(0, 0%, 0%, 0.212);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(7px);
+}
+
 /*MAIN*/
 main{
     margin: auto;
@@ -98,6 +140,14 @@ footer{
         gap: 10px;
     }
 }
+
+@media (min-width:769px){
+        /*INICIO MENU NAVEGAÇÃO*/
+        .hideDesktop{
+            display:none;
+        }
+        /*FIM MENU NAVEGAÇÃO*/
+}
 @media (max-width: 769px){
     .vitrine{
         gap: 3px;
@@ -115,6 +165,12 @@ footer{
         padding-top: 5px;
         font-size: 14pt;
     }
+
+        /*INICIO MENU NAVEGAÇÃO*/
+        .hideMobile{
+            display:none;
+        }
+        /*FIM MENU NAVEGAÇÃO*/
     
 }
 @media (max-width:555px){

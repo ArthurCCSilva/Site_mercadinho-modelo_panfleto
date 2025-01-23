@@ -12,15 +12,37 @@
         AQUI FICARÁ O BANNER
     </div>
     <header>
-        <img src="" alt="">
-        <ul>
-            <li>
-                <a href="">ALIMENTOS</a>
-                <a href="">BEBIDAS</a>
-                <a href="">CARNE</a>
-                <a href="">HIGIENE</a>
-            </li>
-        </ul>
+        <nav>
+            <!-- NAV WEB -->
+            <ul>
+                <li class="logotipo"><img src="" alt=""></li>
+
+                <li class="hideMobile"><a href="#">INÍCIO</a></li>
+                <li class="hideMobile"><a href="#">ALIMENTOS</a></li>
+                <li class="hideMobile"><a href="#">BEBIDAS</a></li>
+                <li class="hideMobile"><a href="#">CARNE</a></li>
+                <li class="hideMobile"><a href="#">HIGIENE</a></li>
+                
+                <li class="hideDesktop" onclick=showSiderbar()>
+                    <a href="#">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sidebar">
+                <li onclick=hideSiderbar()>
+                    <a href="#">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </a>
+                </li>
+                <li class="mobiledrop"><a href="#">INÍCIO</a></li>
+                <li class="mobiledrop"><a href="#">ALIMENTOS</a></li>
+                <li class="mobiledrop"><a href="#">BEBIDAS</a></li>
+                <li class="mobiledrop"><a href="#">CARNE</a></li>
+                <li class="mobiledrop"><a href="#">HIGIENE</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -215,7 +237,7 @@
                     <p>Salsicha tipo Viena - Perdigão - 500g</p>
                 </div>
                 <div class="valor-produto">
-                    <h3 class="preco">12,99</h3>
+                    <h3 class="preco">R$ 12,99</h3>
                 </div>
             </div>
         
@@ -235,7 +257,7 @@
                     <p>Creme dental - Colgate máxima proteção anticáries - 90g</p>
                 </div>
                 <div class="valor-produto">
-                    <h3 class="preco">3,98</h3>
+                    <h3 class="preco">R$ 3,98</h3>
                 </div>
             </div>
             
@@ -250,7 +272,7 @@
                     <p>Aparelho de barbear - Gillette prestobarba 2 ultragrip</p>
                 </div>
                 <div class="valor-produto">
-                    <h3 class="preco">R$7,29 (2 unid)</h3>
+                    <h3 class="preco">R$ 7,29 (2 unid)</h3>
                 </div>
             </div>
 
@@ -280,7 +302,7 @@
                     <p>Hidratante - Nivea milk - 400g</p>
                 </div>
                 <div class="valor-produto">
-                    <h3 class="preco">24,49</h3>
+                    <h3 class="preco">R$ 24,49</h3>
                 </div>
             </div>
 
@@ -294,6 +316,6 @@
         <h4>Quer um modelo como esse para seu mercadinho?</h4>
         <h4>Entre em contato: (88) 9 9350-3686 </h4>
     </footer>
-    
+    <script src="js/java.js"></script>
 </body>
 </html>
