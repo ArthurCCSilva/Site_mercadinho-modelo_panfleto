@@ -19,6 +19,19 @@ body{
 img{
     max-width: 100%; /*coloca max para a img nãopassar do seu tamanho limite*/
 }
+/*PROPAGANDA BANNER TOPO*/
+
+.banner-principal-topo{
+    display: flex;
+    width: 100vw;
+    height: 50PX;
+    background-color: rgb(168, 0, 0);
+    justify-content: center;
+}
+
+.img-banner-principal-topo{
+    width: 50px;
+}
 
 /*HEADER*/
 
@@ -90,6 +103,7 @@ nav .hideMobile a{
 .sidebar a{
     color: #1f1fff;
     width: 100vw;
+    font-size: 14pt;
 }
 
 .sidebar a:hover{
@@ -175,7 +189,7 @@ footer{
     }
 }
 
-@media (min-width:769px){
+@media (min-width:768px){
         /*INICIO MENU NAVEGAÇÃO*/
         .hideDesktop{
             display:none;
@@ -199,12 +213,6 @@ footer{
         padding-top: 5px;
         font-size: 14pt;
     }
-
-        /*INICIO MENU NAVEGAÇÃO*/
-        .hideMobile{
-            display:none;
-        }
-        /*FIM MENU NAVEGAÇÃO*/
     
 }
 @media (max-width:555px){
@@ -214,6 +222,13 @@ footer{
     .produto{
         height: 300px;
     }
+
+    
+        /*INICIO MENU NAVEGAÇÃO*/
+        .hideMobile{
+            display:none;
+        }
+        /*FIM MENU NAVEGAÇÃO*/
 
 @media (min-width: 530px) and (max-width:537px){
     .produto{
