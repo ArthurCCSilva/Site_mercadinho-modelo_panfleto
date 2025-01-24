@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: #1f1fff;
+    background-color: #3232ff;
 }
 
 body{
@@ -25,12 +25,12 @@ img{
     display: flex;
     width: 100vw;
     height: 50PX;
-    background-color: rgb(168, 0, 0);
+    background-color: #ca1f1f;
     justify-content: center;
 }
 
 .img-banner-principal-topo{
-    width: 50px;
+    max-width: 100%;
 }
 
 /*HEADER*/
@@ -50,6 +50,10 @@ nav ul{
 }
 nav li{
     height: 40px;
+}
+nav li:first-child{/*somente o primeiro item fica alinhado*/
+    margin-right: auto;
+    padding-left: 1.56em;
 }
 
 nav a{
@@ -174,7 +178,8 @@ h3.preco{
 /*CABECALHO*/
 footer{
     text-align: center;
-    background-color: pink;
+    background-color: #3232ff;
+    color: #fff;
 }
 
 /* PARA RESPONSSIVIDADE*/
