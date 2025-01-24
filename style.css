@@ -9,11 +9,11 @@
 }
 
 header{
-    background-color: blueviolet;
+    background-color: #1f1fff;
 }
 
 body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
 }
 
 img{
@@ -33,8 +33,11 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 10px;
 }
-nav li{height: 60px;}
+nav li{
+    height: 40px;
+}
 
 nav a{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -44,14 +47,36 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
+.icon{
+    fill: #fff;
+}
+
+/*navegador*/
+nav .hideMobile a{
+    color: #ffffff;
+}
+
+.hideMobile a:hover{
+    background-color: #ffffff;
+    color: #1f1fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#nav_select a{
+    background-color: #ffffff;
+    border-radius: 5px 5px 0px 0px;
+    color: #1f1fff;
+}    
+/*mobile*/
 .sidebar{
     position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 280px;
+    width: 100vw;
     z-index: 999;
     background-color: hsla(0, 0%, 100%, 0.295);
     box-shadow: -10px 0px 10px hsla(0, 0%, 0%, 0.212);
@@ -60,6 +85,15 @@ nav a{
     align-items: flex-start;
     justify-content: flex-start;
     backdrop-filter: blur(7px);
+}
+
+.sidebar a{
+    color: #1f1fff;
+    width: 100vw;
+}
+
+.sidebar a:hover{
+    color: #02027e;
 }
 
 /*MAIN*/
@@ -72,7 +106,7 @@ main{
 h2{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    border-left: 5px solid blue;
+    border-left: 5px solid #1f1fff;
     margin: 20px 0px 10px 0px;
     padding: 5px 0px;
     text-indent: 8px;
