@@ -23,12 +23,18 @@ img{
 
 .banner-principal-topo{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 50PX;
     background-color: #ca1f1f;
     justify-content: center;
+    background-size: cover;
+    background-image: url("img/banner_principal_topo.jpg");
+    background-position: center;
 }
-
+.banner-principal-topo img{
+    background-size: cover;
+    background-position: center center;
+}
 .img-banner-principal-topo{
     max-width: 100%;
 }
@@ -175,6 +181,31 @@ h3.preco{
     font-size: 18pt;
 }
 
+/*propaganda web*/
+.propaganda{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.propaganda_gd{/*450x200*/
+    justify-content: center;
+    background-color: #ca1f1f;
+    width: 450px;
+    height: 200px;
+}
+
+.bloco_propaganda_pq{
+    gap: 30px;
+}
+
+.propaganda_pq{/*225x200*/
+    background-color: blueviolet;
+    max-width: 100%;
+}
+
 /*CABECALHO*/
 footer{
     text-align: center;
@@ -195,45 +226,47 @@ footer{
 }
 
 @media (min-width:768px){
-        /*INICIO MENU NAVEGAÇÃO*/
-        .hideDesktop{
-            display:none;
-        }
-        /*FIM MENU NAVEGAÇÃO*/
+    /*INICIO MENU NAVEGAÇÃO*/
+    .hideDesktop{
+        display:none;
+    }
+    /*FIM MENU NAVEGAÇÃO*/
 }
-@media (max-width: 769px){
-    .vitrine{
-        gap: 3px;
-    }
-    .produto{
-        width: 23vw;
-        height: 324px;
-    }
+@media (max-width: 768px){
+.vitrine{
+    gap: 3px;
+}
+.produto{
+    width: 23vw;
+    height: 324px;
+}
 
-    p{
-        font-size: 12pt;
-    }
+p{
+    font-size: 12pt;
+}
 
-    h3.preco{
-        padding-top: 5px;
-        font-size: 14pt;
-    }
-    
+h3.preco{
+    padding-top: 5px;
+    font-size: 14pt;
+}
+
 }
 @media (max-width:555px){
     .vitrine{
         gap: 5px;
     }
     .produto{
-        height: 300px;
+        min-height: 300px;
     }
-
-    
-        /*INICIO MENU NAVEGAÇÃO*/
-        .hideMobile{
-            display:none;
-        }
-        /*FIM MENU NAVEGAÇÃO*/
+    .descricao-produto p{
+        font-size: 11pt;
+    }
+   
+    /*INICIO MENU NAVEGAÇÃO*/
+    .hideMobile{
+        display:none;
+    }
+    /*FIM MENU NAVEGAÇÃO*/
 
 @media (min-width: 530px) and (max-width:537px){
     .produto{
@@ -276,6 +309,17 @@ footer{
         padding-top: 5px;
         font-size: 12pt;
     }
+
+
+    .bloco_propaganda_pq{
+        max-width: 95vw;
+        gap: 15%;
+    }
+
+    .propaganda_pq{
+        background-color: blueviolet;
+        max-width: 145px;
+    }
 }
 
 @media(max-width:321px){
@@ -301,5 +345,9 @@ footer{
     
     .valor-produto{
         height: 10%;
+    }
+
+    .bloco_propaganda_pq{
+        gap: 5%;
     }
 }

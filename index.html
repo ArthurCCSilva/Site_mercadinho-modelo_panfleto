@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>MECADINHO FAMÍLIA</title>
+    <title>MF INÍCIO</title>
 </head>
 <body>
     
     <header>
         <div class="banner-principal-topo">
-            <picture>
-                <source srcset="img/banner_principal_topo_425.jpg" media="(max-width: 426px)">
-                <img class="img-banner-principal-topo" src="img/banner_principal_topo.jpg" alt="">
-            </picture>
         </div>
         <nav>
             <!-- NAV WEB -->
@@ -26,14 +22,14 @@
                 <li class="hideMobile"><a href="#">BEBIDAS</a></li>
                 <li class="hideMobile"><a href="#">CARNE</a></li>
                 <li class="hideMobile"><a href="#">HIGIENE</a></li>
-                
+
                 <li class="hideDesktop" onclick=showSiderbar()>
                     <a href="#">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                     </a>
                 </li>
             </ul>
-            <!--NAV MOBILE-->>
+            <!--NAV MOBILE-->
             <ul class="sidebar">
                 <li onclick=hideSiderbar()>
                     <a href="#">
@@ -50,7 +46,23 @@
     </header>
 
     <main>
-        <h1>MERCADINHO FAMÍLIA - O MELHOR PREÇO ESTÁ AQUI!</h1>
+        <div class="propaganda">
+            <picture>
+                <source media="(max-width: 426px)" srcset="img/propaganda/principal_300.jpg">
+                <img src="img/propaganda/principal_450.jpg"">
+            </picture>
+
+            <div class="bloco_propaganda_pq">
+                <picture>
+                    <source srcset="img/propaganda/segunda_verde_145.jpg" media="(max-width: 426px)">
+                    <img src="img/propaganda/segunda_verde_225.jpg" alt="propaganda" class="propaganda_pq">
+                </picture>
+                <picture>
+                    <source srcset="img/propaganda/desconto_50_145.jpg" media="(max-width: 426px)">
+                    <img src="img/propaganda/desconto_50_225.jpg" alt="propaganda" class="propaganda_pq">
+                </picture>
+            </div>
+        </div>   
         
         <h2>ALIMENTOS</h2>
         <article class="vitrine">
