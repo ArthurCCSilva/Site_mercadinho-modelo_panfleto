@@ -192,9 +192,7 @@ h3.preco{
 
 .propaganda_gd{/*450x200*/
     justify-content: center;
-    background-color: #ca1f1f;
-    width: 450px;
-    height: 200px;
+    max-width: 450px;
 }
 
 .bloco_propaganda_pq{
