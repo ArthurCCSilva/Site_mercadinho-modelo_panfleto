@@ -99,7 +99,7 @@ nav .hideMobile a{
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     z-index: 999;
     background-color: hsla(0, 0%, 100%, 0.295);
     box-shadow: -10px 0px 10px hsla(0, 0%, 0%, 0.212);
@@ -276,7 +276,7 @@ h3.preco{
     }
 }
 }
-@media(max-width: 426px){
+@media(max-width: 522px){
     .vitrine{
         gap: 8px;
     }
